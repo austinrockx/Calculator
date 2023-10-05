@@ -32,21 +32,21 @@
             this.Num2_click = new System.Windows.Forms.Button();
             this.Output = new System.Windows.Forms.TextBox();
             this.Num3_click = new System.Windows.Forms.Button();
-            this.Action1_click = new System.Windows.Forms.Button();
-            this.Action2_click = new System.Windows.Forms.Button();
-            this.Action4_click = new System.Windows.Forms.Button();
-            this.Action3_click = new System.Windows.Forms.Button();
+            this.Multi = new System.Windows.Forms.Button();
+            this.Div = new System.Windows.Forms.Button();
+            this.Sub = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
             this.Num6_click = new System.Windows.Forms.Button();
             this.Num5_click = new System.Windows.Forms.Button();
             this.Num4_click = new System.Windows.Forms.Button();
-            this.Action6_click = new System.Windows.Forms.Button();
-            this.Action5_click = new System.Windows.Forms.Button();
+            this.Sqrt = new System.Windows.Forms.Button();
+            this.Pow = new System.Windows.Forms.Button();
             this.Num9_click = new System.Windows.Forms.Button();
             this.Num8_click = new System.Windows.Forms.Button();
             this.Num7_click = new System.Windows.Forms.Button();
-            this.Action9_click = new System.Windows.Forms.Button();
-            this.Action8_click = new System.Windows.Forms.Button();
-            this.Action7_click = new System.Windows.Forms.Button();
+            this.Calculate = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
+            this.Dot = new System.Windows.Forms.Button();
             this.Num0_click = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -92,45 +92,49 @@
             this.Num3_click.UseVisualStyleBackColor = false;
             this.Num3_click.Click += new System.EventHandler(this.Num3_click_Click);
             // 
-            // Action1_click
+            // Multi
             // 
-            this.Action1_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action1_click.Location = new System.Drawing.Point(964, 259);
-            this.Action1_click.Name = "Action1_click";
-            this.Action1_click.Size = new System.Drawing.Size(169, 145);
-            this.Action1_click.TabIndex = 4;
-            this.Action1_click.Text = "*";
-            this.Action1_click.UseVisualStyleBackColor = false;
+            this.Multi.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Multi.Location = new System.Drawing.Point(964, 259);
+            this.Multi.Name = "Multi";
+            this.Multi.Size = new System.Drawing.Size(169, 145);
+            this.Multi.TabIndex = 4;
+            this.Multi.Text = "*";
+            this.Multi.UseVisualStyleBackColor = false;
+            this.Multi.Click += new System.EventHandler(this.Multi_Click);
             // 
-            // Action2_click
+            // Div
             // 
-            this.Action2_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action2_click.Location = new System.Drawing.Point(1176, 259);
-            this.Action2_click.Name = "Action2_click";
-            this.Action2_click.Size = new System.Drawing.Size(169, 145);
-            this.Action2_click.TabIndex = 5;
-            this.Action2_click.Text = "/";
-            this.Action2_click.UseVisualStyleBackColor = false;
+            this.Div.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Div.Location = new System.Drawing.Point(1176, 259);
+            this.Div.Name = "Div";
+            this.Div.Size = new System.Drawing.Size(169, 145);
+            this.Div.TabIndex = 5;
+            this.Div.Text = "/";
+            this.Div.UseVisualStyleBackColor = false;
+            this.Div.Click += new System.EventHandler(this.Div_Click);
             // 
-            // Action4_click
+            // Sub
             // 
-            this.Action4_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action4_click.Location = new System.Drawing.Point(1176, 421);
-            this.Action4_click.Name = "Action4_click";
-            this.Action4_click.Size = new System.Drawing.Size(169, 145);
-            this.Action4_click.TabIndex = 10;
-            this.Action4_click.Text = "-";
-            this.Action4_click.UseVisualStyleBackColor = false;
+            this.Sub.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Sub.Location = new System.Drawing.Point(1176, 421);
+            this.Sub.Name = "Sub";
+            this.Sub.Size = new System.Drawing.Size(169, 145);
+            this.Sub.TabIndex = 10;
+            this.Sub.Text = "-";
+            this.Sub.UseVisualStyleBackColor = false;
+            this.Sub.Click += new System.EventHandler(this.Sub_Click);
             // 
-            // Action3_click
+            // Add
             // 
-            this.Action3_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action3_click.Location = new System.Drawing.Point(964, 421);
-            this.Action3_click.Name = "Action3_click";
-            this.Action3_click.Size = new System.Drawing.Size(169, 145);
-            this.Action3_click.TabIndex = 9;
-            this.Action3_click.Text = "+";
-            this.Action3_click.UseVisualStyleBackColor = false;
+            this.Add.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Add.Location = new System.Drawing.Point(964, 421);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(169, 145);
+            this.Add.TabIndex = 9;
+            this.Add.Text = "+";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // Num6_click
             // 
@@ -165,25 +169,27 @@
             this.Num4_click.UseVisualStyleBackColor = false;
             this.Num4_click.Click += new System.EventHandler(this.Num4_click_Click);
             // 
-            // Action6_click
+            // Sqrt
             // 
-            this.Action6_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action6_click.Location = new System.Drawing.Point(1176, 591);
-            this.Action6_click.Name = "Action6_click";
-            this.Action6_click.Size = new System.Drawing.Size(169, 145);
-            this.Action6_click.TabIndex = 15;
-            this.Action6_click.Text = "Sqrt";
-            this.Action6_click.UseVisualStyleBackColor = false;
+            this.Sqrt.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Sqrt.Location = new System.Drawing.Point(1176, 591);
+            this.Sqrt.Name = "Sqrt";
+            this.Sqrt.Size = new System.Drawing.Size(169, 145);
+            this.Sqrt.TabIndex = 15;
+            this.Sqrt.Text = "Sqrt";
+            this.Sqrt.UseVisualStyleBackColor = false;
+            this.Sqrt.Click += new System.EventHandler(this.Sqrt_Click);
             // 
-            // Action5_click
+            // Pow
             // 
-            this.Action5_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action5_click.Location = new System.Drawing.Point(964, 591);
-            this.Action5_click.Name = "Action5_click";
-            this.Action5_click.Size = new System.Drawing.Size(169, 145);
-            this.Action5_click.TabIndex = 14;
-            this.Action5_click.Text = "Pow 2";
-            this.Action5_click.UseVisualStyleBackColor = false;
+            this.Pow.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Pow.Location = new System.Drawing.Point(964, 591);
+            this.Pow.Name = "Pow";
+            this.Pow.Size = new System.Drawing.Size(169, 145);
+            this.Pow.TabIndex = 14;
+            this.Pow.Text = "Pow 2";
+            this.Pow.UseVisualStyleBackColor = false;
+            this.Pow.Click += new System.EventHandler(this.Pow_Click);
             // 
             // Num9_click
             // 
@@ -218,36 +224,38 @@
             this.Num7_click.UseVisualStyleBackColor = false;
             this.Num7_click.Click += new System.EventHandler(this.Num7_click_Click);
             // 
-            // Action9_click
+            // Calculate
             // 
-            this.Action9_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action9_click.Location = new System.Drawing.Point(964, 760);
-            this.Action9_click.Name = "Action9_click";
-            this.Action9_click.Size = new System.Drawing.Size(381, 145);
-            this.Action9_click.TabIndex = 19;
-            this.Action9_click.Text = "Calculate";
-            this.Action9_click.UseVisualStyleBackColor = false;
+            this.Calculate.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Calculate.Location = new System.Drawing.Point(964, 760);
+            this.Calculate.Name = "Calculate";
+            this.Calculate.Size = new System.Drawing.Size(381, 145);
+            this.Calculate.TabIndex = 19;
+            this.Calculate.Text = "Calculate";
+            this.Calculate.UseVisualStyleBackColor = false;
+            this.Calculate.Click += new System.EventHandler(this.Calculate_Click);
             // 
-            // Action8_click
+            // Clear
             // 
-            this.Action8_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action8_click.Location = new System.Drawing.Point(762, 760);
-            this.Action8_click.Name = "Action8_click";
-            this.Action8_click.Size = new System.Drawing.Size(169, 145);
-            this.Action8_click.TabIndex = 18;
-            this.Action8_click.Text = "C";
-            this.Action8_click.UseVisualStyleBackColor = false;
+            this.Clear.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Clear.Location = new System.Drawing.Point(762, 760);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(169, 145);
+            this.Clear.TabIndex = 18;
+            this.Clear.Text = "C";
+            this.Clear.UseVisualStyleBackColor = false;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
-            // Action7_click
+            // Dot
             // 
-            this.Action7_click.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Action7_click.Location = new System.Drawing.Point(556, 760);
-            this.Action7_click.Name = "Action7_click";
-            this.Action7_click.Size = new System.Drawing.Size(169, 145);
-            this.Action7_click.TabIndex = 17;
-            this.Action7_click.Text = ".";
-            this.Action7_click.UseVisualStyleBackColor = false;
-            this.Action7_click.Click += new System.EventHandler(this.Action7_click_Click);
+            this.Dot.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Dot.Location = new System.Drawing.Point(556, 760);
+            this.Dot.Name = "Dot";
+            this.Dot.Size = new System.Drawing.Size(169, 145);
+            this.Dot.TabIndex = 17;
+            this.Dot.Text = ".";
+            this.Dot.UseVisualStyleBackColor = false;
+            this.Dot.Click += new System.EventHandler(this.Dot_Click);
             // 
             // Num0_click
             // 
@@ -265,22 +273,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1672, 968);
-            this.Controls.Add(this.Action9_click);
-            this.Controls.Add(this.Action8_click);
-            this.Controls.Add(this.Action7_click);
+            this.Controls.Add(this.Calculate);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.Dot);
             this.Controls.Add(this.Num0_click);
-            this.Controls.Add(this.Action6_click);
-            this.Controls.Add(this.Action5_click);
+            this.Controls.Add(this.Sqrt);
+            this.Controls.Add(this.Pow);
             this.Controls.Add(this.Num9_click);
             this.Controls.Add(this.Num8_click);
             this.Controls.Add(this.Num7_click);
-            this.Controls.Add(this.Action4_click);
-            this.Controls.Add(this.Action3_click);
+            this.Controls.Add(this.Sub);
+            this.Controls.Add(this.Add);
             this.Controls.Add(this.Num6_click);
             this.Controls.Add(this.Num5_click);
             this.Controls.Add(this.Num4_click);
-            this.Controls.Add(this.Action2_click);
-            this.Controls.Add(this.Action1_click);
+            this.Controls.Add(this.Div);
+            this.Controls.Add(this.Multi);
             this.Controls.Add(this.Num3_click);
             this.Controls.Add(this.Output);
             this.Controls.Add(this.Num2_click);
@@ -298,21 +306,21 @@
         private System.Windows.Forms.Button Num2_click;
         private System.Windows.Forms.TextBox Output;
         private System.Windows.Forms.Button Num3_click;
-        private System.Windows.Forms.Button Action1_click;
-        private System.Windows.Forms.Button Action2_click;
-        private System.Windows.Forms.Button Action4_click;
-        private System.Windows.Forms.Button Action3_click;
+        private System.Windows.Forms.Button Multi;
+        private System.Windows.Forms.Button Div;
+        private System.Windows.Forms.Button Sub;
+        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button Num6_click;
         private System.Windows.Forms.Button Num5_click;
         private System.Windows.Forms.Button Num4_click;
-        private System.Windows.Forms.Button Action6_click;
-        private System.Windows.Forms.Button Action5_click;
+        private System.Windows.Forms.Button Sqrt;
+        private System.Windows.Forms.Button Pow;
         private System.Windows.Forms.Button Num9_click;
         private System.Windows.Forms.Button Num8_click;
         private System.Windows.Forms.Button Num7_click;
-        private System.Windows.Forms.Button Action9_click;
-        private System.Windows.Forms.Button Action8_click;
-        private System.Windows.Forms.Button Action7_click;
+        private System.Windows.Forms.Button Calculate;
+        private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.Button Dot;
         private System.Windows.Forms.Button Num0_click;
     }
 }

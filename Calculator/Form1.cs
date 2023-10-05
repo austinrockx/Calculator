@@ -61,12 +61,81 @@ namespace Calculator
         {
             Output.Text += "9";
         }
-
-        private void Action7_click_Click(object sender, EventArgs e)
+        private void Dot_Click(object sender, EventArgs e)
         {
             if (!Output.Text.Contains("."))
             {
                 Output.Text += ".";
+            }
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            Output.Text = string.Empty;
+        }
+
+        private void Multi_Click(object sender, EventArgs e)
+        {
+            Output.Text += "*";
+        }
+
+        private void Div_Click(object sender, EventArgs e)
+        {
+            Output.Text += "/";
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            Output.Text += "+";
+        }
+
+        private void Sub_Click(object sender, EventArgs e)
+        {
+            Output.Text += "-";
+        }
+
+        private void Pow_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double num = double.Parse(Output.Text);
+                Output.Text = (Math.Pow(num, 2)).ToString();
+            }
+            catch (FormatException)
+            {
+                Output.Text = "Invalid Input";
+            }
+        }
+
+        private void Sqrt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double num = double.Parse(Output.Text);
+                if (num >= 0)
+                {
+                    Output.Text = (Math.Sqrt(num)).ToString();
+                }
+                else
+                {
+                    Output.Text = "Invalid Input";
+                }
+            }
+            catch (FormatException)
+            {
+                Output.Text = "Invalid Input";
+            }
+        }
+
+        private void Calculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Output.Text = new DataTable().Compute(Output.Text, null).ToString();
+            }
+            catch (Exception)
+            {
+                Output.Text = "Error";
             }
         }
     }
